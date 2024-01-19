@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Akıllı İzleme</title>
+  <title>NICU</title>
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="assets/img/ertuncozcan.png">
@@ -77,76 +77,9 @@
       document.getElementById(cityName).style.display = "block";
       evt.currentTarget.classList.add("active");
 
-      if (cityName === "temp1") {
-        initEChartForTemp1();
-      } else if (cityName === "temp2") {
-        initEChartForTemp2();
-      } else if (cityName === "spo2") {
-        initEChartForSpo2();
-      }
+
     }
 
-    function initEChartForTemp1() {
-      var chart = echarts.init(document.querySelector('#temp1 .echart-area-pieces-chart-example'));
-
-      var option = {
-        xAxis: {
-          type: 'category',
-          data: ['A', 'B', 'C', 'D', 'E']
-        },
-        yAxis: {
-          type: 'value'
-        },
-        series: [{
-          type: 'line',
-          data: [10, 20, 15, 25, 30]
-        }]
-      };
-
-      chart.setOption(option);
-    }
-
-    function initEChartForTemp2() {
-      var chart = echarts.init(document.querySelector('#temp2 .echart-area-pieces-chart-example2'));
-
-      var option = {
-        xAxis: {
-          type: 'category',
-          data: ['A', 'B', 'C', 'D', 'E']
-        },
-        yAxis: {
-          type: 'value'
-        },
-        series: [{
-          type: 'line',
-          data: [10, 20, 15, 25, 30]
-        }]
-      };
-
-      chart.setOption(option);
-    }
-
-    function initEChartForSpo2() {
-      var chart = echarts.init(document.querySelector('#spo2 .echart-area-pieces-chart-example3'));
-
-      var option = {
-        xAxis: {
-          type: 'category',
-          data: ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J']
-        },
-        yAxis: {
-          type: 'value'
-        },
-        series: [{
-          type: 'line',
-          data: [10, 20, 15, 25, 30, 40, 50, 15, 57, 65]
-        }]
-      };
-
-      chart.setOption(option);
-    }
-
-    openCity(event, 'temp1');
   </script>
   <script src="assets/vendors/popper/popper.min.js"></script>
   <script src="assets/vendors/bootstrap/bootstrap.min.js"></script>
@@ -171,6 +104,6 @@
   <script src="assets/js/echarts-example.js"></script>
   <script src="assets/js/crm-dashboard.js"></script>
 
-<script src="runtime.c8f449e011f9641c.js" type="module"></script><script src="polyfills.9a387644f6039baa.js" type="module"></script><script src="main.2d35eaa812102484.js" type="module"></script></body>
+<script src="runtime.c8f449e011f9641c.js" type="module"></script><script src="polyfills.9a387644f6039baa.js" type="module"></script><script src="main.ce7dfde1f34191ed.js" type="module"></script></body>
 
 </html>
